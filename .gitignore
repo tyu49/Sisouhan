@@ -4,6 +4,16 @@
 #
 # Recommended: add any editor/OS/tool-specific ignore rules from the Global/ templates as needed.
 # See: https://github.com/github/gitignore/tree/main/Global
+
+# This repository contains the Unity project in the Sisouhan/ subfolder.
+# Ignore Unity-generated folders there as well.
+/Sisouhan/[Ll]ibrary/
+/Sisouhan/[Tt]emp/
+/Sisouhan/[Oo]bj/
+/Sisouhan/[Bb]uild/
+/Sisouhan/[Bb]uilds/
+/Sisouhan/[Ll]ogs/
+/Sisouhan/[Uu]ser[Ss]ettings/
 #
 .utmp/
 /[Ll]ibrary/
