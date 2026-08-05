@@ -11,6 +11,7 @@ namespace Script.GameManager.Components
         public List<NewspaperSO> ApprovedNewspapers { get; private set; } = new();
         public List<NewspaperSO> RejectedNewspapers { get; private set; } = new();
         public string ResultText { get; private set; }
+        public string ResultTitle { get; private set; }
 
         private void Awake()
         {
@@ -36,7 +37,9 @@ namespace Script.GameManager.Components
 
         public void ShowResult()
         {
-            ResultText = "-신문 결과-\n";
+            
+            ResultTitle = 
+            ResultText = string.Empty;
             for (int i = 0; i < ApprovedNewspapers.Count; i++)
             {
                 ResultText += $"{i + 1}호 신문 : " + ApprovedNewspapers[i].ApprovedText+"\n";
