@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Script.NewsPaper;
 using Script.SO;
 using UnityEngine;
 
@@ -8,7 +9,9 @@ namespace Script.GameManager.Components
     {
         [SerializeField] private List<NewspaperListSO> newspaperList;
         [SerializeField] private List<NewspaperSO> toDayAppearingList = new();
-
+        [SerializeField] private NewspaperRequest paper;
+        
+        [ContextMenu("newDay")]
         public int NewDay(int day)
         {
             NewspaperListSO today = new();
@@ -22,6 +25,13 @@ namespace Script.GameManager.Components
                 (toDayAppearingList[i], toDayAppearingList[ran]) = (toDayAppearingList[ran], toDayAppearingList[i]);
             }
             return today.AppearingLimit;
+        }
+
+        [ContextMenu("Request")]
+        public void Request()
+        {
+            paper.GetNewspaper(toDayAppearingList[0]);
+            toDayAppearingList.RemoveAt(0);
         }
     }
 }

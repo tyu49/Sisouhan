@@ -29,7 +29,7 @@ namespace Script.NewsPaper
             _rectTrm = GetComponent<RectTransform>();
         }
 
-        private void GetNewspaper(NewspaperSO data) => StartCoroutine(GetNewspaperCo(data));
+        public void GetNewspaper(NewspaperSO data) => StartCoroutine(GetNewspaperCo(data));
 
         private IEnumerator GetNewspaperCo(NewspaperSO data)
         {

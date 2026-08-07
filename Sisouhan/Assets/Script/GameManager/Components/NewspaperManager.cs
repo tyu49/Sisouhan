@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Script.NewsPaper;
 using Script.SO;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ namespace Script.GameManager.Components
 {
     public class NewspaperManager : MonoBehaviour
     {
+        [SerializeField] private ResultPaper resultPaper;
+        
         private GameManager _manager;
         public List<NewspaperSO> ApprovedNewspapers { get; private set; } = new();
         public List<NewspaperSO> RejectedNewspapers { get; private set; } = new();
@@ -37,8 +40,7 @@ namespace Script.GameManager.Components
 
         public void ShowResult()
         {
-            
-            ResultTitle = 
+            ResultTitle = $"{_manager._currentDay}일차 보고서";
             ResultText = string.Empty;
             for (int i = 0; i < ApprovedNewspapers.Count; i++)
             {

@@ -8,7 +8,7 @@ namespace Script.GameManager
 {
     public class GameManager : MonoBehaviour
     {
-        private int _currentDay;
+        public int _currentDay { get; private set; }
         private int _newsLimit;
         [field: SerializeField] public int Revolution { get; private set; }
         [field: SerializeField] public int Reliability { get; private set; }
@@ -42,6 +42,9 @@ namespace Script.GameManager
                 _newsManager.ShowResult();
                 return;
             }
+
+            _newsLimit--;
+            _dailyNews.Request();
         }
 
         public void Choose(NewspaperSO data, bool choice)
