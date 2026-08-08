@@ -11,7 +11,6 @@ namespace Script.GameManager.Components
         [SerializeField] private List<NewspaperSO> toDayAppearingList = new();
         [SerializeField] private NewspaperRequest paper;
         
-        [ContextMenu("newDay")]
         public int NewDay(int day)
         {
             NewspaperListSO today = new();

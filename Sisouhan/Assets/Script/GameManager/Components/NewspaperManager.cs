@@ -11,8 +11,8 @@ namespace Script.GameManager.Components
         [SerializeField] private ResultPaper resultPaper;
         
         private GameManager _manager;
-        public List<NewspaperSO> ApprovedNewspapers { get; private set; } = new();
-        public List<NewspaperSO> RejectedNewspapers { get; private set; } = new();
+        [field : SerializeField]public List<NewspaperSO> ApprovedNewspapers { get; private set; } = new();
+        [field : SerializeField]public List<NewspaperSO> RejectedNewspapers { get; private set; } = new();
         public string ResultText { get; private set; }
         public string ResultTitle { get; private set; }
 
@@ -38,14 +38,17 @@ namespace Script.GameManager.Components
             RejectedNewspapers.Add(newspaper);
         }
 
+        [ContextMenu("ShowResult")]
         public void ShowResult()
         {
-            ResultTitle = $"{_manager._currentDay}일차 보고서";
+            ResultTitle = $"{_manager.CurrentDay}일차";
             ResultText = string.Empty;
             for (int i = 0; i < ApprovedNewspapers.Count; i++)
             {
-                ResultText += $"{i + 1}호 신문 : " + ApprovedNewspapers[i].ApprovedText+"\n";
+                ResultText += $"{i + 1}호 뉴스 : " + ApprovedNewspapers[i].ApprovedText+"\n";
             }
+            GetResult();
+            resultPaper.SetResultText(ResultTitle, ResultText);
         }
 
         public void GetResult()

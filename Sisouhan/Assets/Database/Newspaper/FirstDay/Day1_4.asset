@@ -10,11 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5ee328e4d33401e810fb1e05a1e5d31, type: 3}
-  m_Name: Tset 3
+  m_Name: Day1_4
   m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
-  <ManagingID>k__BackingField: test4
+  <ManagingID>k__BackingField: day_1_4
   <AppearingDay>k__BackingField: 4
-  <Text>k__BackingField: test 4 this is the test 4
+  <HeadLine>k__BackingField: "\"\uAD6D\uBBFC\uC744 \uC704\uD55C \uB098\uB77C\uB97C
+    \uB9CC\uB4E4\uACA0\uB2E4\" \uC815\uBD80\uAC00 \uB4DC\uB514\uC5B4 \uC77C\uC744
+    \uD558\uAE30 \uC2DC\uC791\uD588\uB2E4 "
+  <Text>k__BackingField: "\uC5B4\uC82F\uB0A0 \uC800\uB141 \uAE30\uC790\uD68C\uACAC\uC5D0\uC11C
+    \uB300\uD1B5\uB839\uC740 \uAD6D\uBBFC\uC744 \uC704\uD55C \uB098\uB77C\uB97C \uB9CC\uB4E4\uACA0\uB2E4
+    \uBC1C\uD45C\uD558\uBA70 \uBCF5\uC9C0\uAD00\uB828 \uC608\uC0B0\uC744 \uB354\uC6B1
+    \uB298\uB838\uC2B5\uB2C8\uB2E4 "
   <EffectEntryList>k__BackingField:
   - <Effect>k__BackingField: 0
     <Value>k__BackingField: 0
@@ -22,4 +28,4 @@ MonoBehaviour:
     <Value>k__BackingField: 0
   - <Effect>k__BackingField: 0
     <Value>k__BackingField: 0
-  <ApprovedText>k__BackingField: 
+  <ApprovedText>k__BackingField: test four

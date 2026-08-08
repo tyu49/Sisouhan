@@ -30,6 +30,7 @@ namespace Script.NewsPaper
             group.interactable = false;
             title.SetText(header);
             mainText.SetText(body);
+            StartCoroutine(Appear());
         }
 
         private IEnumerator Appear()

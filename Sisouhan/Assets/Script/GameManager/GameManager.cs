@@ -8,7 +8,7 @@ namespace Script.GameManager
 {
     public class GameManager : MonoBehaviour
     {
-        public int _currentDay { get; private set; }
+        [field : SerializeField]public int CurrentDay { get; private set; }
         private int _newsLimit;
         [field: SerializeField] public int Revolution { get; private set; }
         [field: SerializeField] public int Reliability { get; private set; }
@@ -26,15 +26,16 @@ namespace Script.GameManager
 
         private void Start()
         {
-            throw new NotImplementedException();
         }
 
-        private void Newday()
+        [ContextMenu("NewDay")]
+        private void NewDay()
         {
-            _newsLimit = _dailyNews.NewDay(_currentDay);
+            _newsLimit = _dailyNews.NewDay(CurrentDay);
             OnNewDay?.Invoke();
         }
 
+        [ContextMenu("GetNews")]
         public void GetNews()
         {
             if (_newsLimit <= 0)

@@ -8,6 +8,7 @@ namespace Script.NewsPaper
 {
     public class NewspaperRequest : MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI headLine;
         [SerializeField] private TextMeshProUGUI text;
         [SerializeField] private CanvasGroup group;
         [SerializeField] private GameManager.GameManager manager;
