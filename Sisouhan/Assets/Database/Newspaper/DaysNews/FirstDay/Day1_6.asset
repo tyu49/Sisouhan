@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ee328e4d33401e810fb1e05a1e5d31, type: 3}
+  m_Name: Day1_6
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
+  <ManagingID>k__BackingField: day_1_6
+  <AppearingDay>k__BackingField: 5
+  <HeadLine>k__BackingField: "\uAD6D\uD68C\uC758\uC6D0 XX\uC528 \uAC1C\uC778\uC801\uC73C\uB85C
+    \uAE30\uBD80\uB97C \uD558\uB358 \uC0AC\uC2E4 \uB4DC\uB7EC\uB098 \uC2E0\uC120\uD55C
+    \uCDA9\uACA9\uC744 \uC120\uC0AC..."
+  <Text>k__BackingField: "\uAD6D\uD68C\uC758\uC6D0 XX\uC528\uB294 \uC5B4\uB978\uC774
+    \uB418\uAE30 2\uB144 \uC804\uC778 \uACE0\uB4F1\uD559\uAD50 2\uD559\uB144 \uBD80\uD130
+    \uC6A9\uB3C8\uC744 \uBAA8\uC544 \uAFB8\uC900\uD788 \uAE30\uBD80\uD574\uC624\uB358
+    \uAC83\uC774 \uC9C0\uAE08\uAE4C\uC9C0 \uC774\uC5B4\uC9C4\uAC83\uC774\uB77C\uACE0
+    \uBC1D\uD614\uC73C\uBA70, \uC774 \uC0AC\uC2E4\uC744 \uAC10\uCD98 \uC774\uC720\uB85C\uB294
+    \uAD6D\uD68C\uC758\uC6D0\uC774 \uAE30\uBD80\uB97C \uD55C\uB2E8 \uC0AC\uC2E4\uC744
+    \uB9D0\uD558\uACE0 \uB2E4\uB2C8\uBA74 \uC624\uD788\uB824 \uC5ED\uD6A8\uACFC\uAC00
+    \uC6B0\uB824\uB418\uC5C8\uB2E4 \uBC1D\uD614\uC2B5\uB2C8\uB2E4."
+  <EffectEntryList>k__BackingField:
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: 0
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: 0
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: 0
+  <ApprovedText>k__BackingField: test four

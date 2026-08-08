@@ -13,10 +13,12 @@ namespace Script.GameManager.Components
         
         public int NewDay(int day)
         {
-            NewspaperListSO today = new();
-            today = newspaperList[day-1];
+            var today = newspaperList[day-1];
             toDayAppearingList.Clear();
-            toDayAppearingList = today.NewsPaperList;
+            foreach (var newspaper in today.NewsPaperList)
+            {
+                toDayAppearingList.Add(newspaper);
+            }
             int len = toDayAppearingList.Count;
             for (int i = 0; i < len; i++)
             {

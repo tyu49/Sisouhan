@@ -451,8 +451,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -867,7 +867,11 @@ MonoBehaviour:
         m_SelectedSource:
           rid: -2
         m_Provider2DCache:
-          rid: -2
+          rid: 5207192710314459217
+    - rid: 5207192710314459217
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -1361,9 +1365,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dafa56facd484837a930c6a6a1d2d252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Script.GameManager.Components.AppearingNewspapersManager
-  newspaperList: []
+  newspaperList:
+  - {fileID: 11400000, guid: 22732e031c0d7cd4aafff9d2074e608f, type: 2}
   toDayAppearingList: []
-  paper: {fileID: 0}
+  paper: {fileID: 1560084363}
 --- !u!1 &1378560228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,7 +1404,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 100}
+  m_SizeDelta: {x: 0, y: 167.8618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378560230
 MonoBehaviour:
@@ -1421,7 +1426,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1\uC77C\uCC28"
+  m_text: "\uD22C\uC7C1 \uB2E8\uACB0 \uB610\uB2E4\uC2DC \uADF8\uB0A0 \uBC24\uACFC
+    \uAC19\uC740 \uD1B5\uC81C\uAC00 \uC774\uB8E8\uC5B4\uC9C8 \uAC83\uC778\uAC00,
+    \uAE30\uC5B4\uCF54 \uCE7C\uB0A0 \uBE7C\uC5B4\uB4E0 \uC815\uBD80"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1b7d40e236979204e8d545af56ea4318, type: 2}
   m_sharedMaterial: {fileID: -119018194173936409, guid: 1b7d40e236979204e8d545af56ea4318, type: 2}
@@ -1448,8 +1455,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1487,7 +1494,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.005432129}
+  m_margin: {x: 15, y: 15, z: 15, w: 15}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1540,7 +1547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2046, y: 0}
+  m_AnchoredPosition: {x: 38, y: 1146}
   m_SizeDelta: {x: 620.7197, y: 805.1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1560084363
@@ -1563,7 +1570,7 @@ MonoBehaviour:
   endPosition: {x: 0, y: 0}
   appearingDelay: 0.5
   approvePosition: {x: 2046, y: 0}
-  rejectedPosition: {x: -1954, y: 0}
+  rejectedPosition: {x: -2046, y: 0}
   moveDelay: 0.6
 --- !u!114 &1560084364
 MonoBehaviour:
@@ -1670,6 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6069418a054944b2bf11f978e408bccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Script.GameManager.GameManager
+  <CurrentDay>k__BackingField: 0
   <Revolution>k__BackingField: 0
   <Reliability>k__BackingField: 0
   <Like>k__BackingField: 0

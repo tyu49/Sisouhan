@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
   <ManagingID>k__BackingField: day_1_3
   <AppearingDay>k__BackingField: 3
-  <HeadLine>k__BackingField: "\uCDA9\uACA9, \uAD6D\uD68C\uC758\uC6D0 XXX \uC74C\uC8FC\uC6B4\uC804
-    \uC0AC\uC2E4 \uBC1D\uD600\uC838...."
+  <HeadLine>k__BackingField: "\uCDA9\uACA9, \uD604 \uAD6D\uD68C\uC758\uC6D0 XXX \uC228\uACA8\uC654\uB358
+    \uC74C\uC8FC\uC6B4\uC804 \uC0AC\uC2E4\uC774 \uBC1D\uD600\uC838...."
   <Text>k__BackingField: "\uC9C0\uB09C \uAD6D\uD68C\uC758\uC6D0 \uC120\uAC70\uC5D0\uC11C
     \uB2F9\uC120\uB41C XXX\uC528\uB294 \uC120\uAC70 \uB2F9\uC2DC \uADDC\uC815 \uC0C1
     \uC790\uC2E0\uC758 \uBAA8\uB4E0 \uC804\uACFC\uAE30\uB85D\uC744 \uBC1D\uD600\uC57C

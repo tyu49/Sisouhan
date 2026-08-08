@@ -35,6 +35,8 @@ namespace Script.NewsPaper
         private IEnumerator GetNewspaperCo(NewspaperSO data)
         {
             _myNews = data;
+            headLine.SetText(_myNews.HeadLine);
+            text.SetText(_myNews.Text);
             group.interactable = false;
             _rectTrm.anchoredPosition = startPosition;
             _rectTrm.DOAnchorPos(endPosition, appearingDelay).SetEase(Ease.OutBack);

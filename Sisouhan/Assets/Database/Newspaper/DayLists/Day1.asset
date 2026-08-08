@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c646caea812a4381a684625d34070c4a, type: 3}
   m_Name: Day1
   m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperListSO
-  <AppearingDay>k__BackingField: 0
-  <NewsPaperList>k__BackingField: []
-  <AppearingLimit>k__BackingField: 0
+  <AppearingDay>k__BackingField: 1
+  <NewsPaperList>k__BackingField:
+  - {fileID: 11400000, guid: 24dd10468b9077b47a197b2887487d83, type: 2}
+  - {fileID: 11400000, guid: 4bd2ec3f4e5115640a3ddb9b203b6e5e, type: 2}
+  - {fileID: 11400000, guid: 2e0021480390c9d4381879d6ba62e60c, type: 2}
+  - {fileID: 11400000, guid: b4bf327b8c3a6f34ebcdc4d2456e76ff, type: 2}
+  - {fileID: 11400000, guid: c947c7e8b86d11d4c9e955d3dfa24e5a, type: 2}
+  - {fileID: 11400000, guid: 5a203a04c785a0645a7dd0828a1ea2b2, type: 2}
+  <AppearingLimit>k__BackingField: 4
