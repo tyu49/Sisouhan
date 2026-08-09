@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
-namespace Script.NewsPaper
+namespace Script.Papers
 {
     public class ResultPaper : MonoBehaviour
     {

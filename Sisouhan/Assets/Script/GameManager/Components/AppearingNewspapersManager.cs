@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Script.NewsPaper;
+using Script.Papers;
 using Script.SO;
 using UnityEngine;
 

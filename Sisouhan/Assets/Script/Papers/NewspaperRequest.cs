@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using DG.Tweening;
 using Script.SO;
 using TMPro;
 using UnityEngine;
-namespace Script.NewsPaper
+
+namespace Script.Papers
 {
     public class NewspaperRequest : MonoBehaviour
     {

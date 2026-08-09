@@ -1568,7 +1568,7 @@ MonoBehaviour:
   manager: {fileID: 1725777600}
   startPosition: {x: 0, y: 1253}
   endPosition: {x: 0, y: 0}
-  appearingDelay: 0.5
+  appearingDelay: 3
   approvePosition: {x: 2046, y: 0}
   rejectedPosition: {x: -2046, y: 0}
   moveDelay: 0.6
