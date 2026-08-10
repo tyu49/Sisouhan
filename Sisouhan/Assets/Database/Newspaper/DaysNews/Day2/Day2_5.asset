@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ee328e4d33401e810fb1e05a1e5d31, type: 3}
+  m_Name: Day2_5
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
+  <ManagingID>k__BackingField: day_2_5
+  <AppearingDay>k__BackingField: 2
+  <HeadLine>k__BackingField: "\uAE38 \uC783\uC740 \uC544\uC774\uB97C 20\uBD84 \uB9CC\uC5D0 \uAC00\uC871 \uD488\uC73C\uB85C, \uC2DC\uBBFC\uACFC \uACBD\uCC30\uC758 \uBE60\uB978 \uACF5\uC870"
+  <Text>k__BackingField: "\uC5B4\uC81C \uC624\uD6C4 XX\uC5ED \uC778\uADFC\uC5D0\uC11C \uBCF4\uD638\uC790\uC640 \uB5A8\uC5B4\uC9C4 \uC5B4\uB9B0\uC774\uAC00 \uC2DC\uBBFC\uC758 \uC2E0\uACE0\uC640 \uACBD\uCC30\uC758 \uC218\uC0C9 \uB05D\uC5D0 \uC57D 20\uBD84 \uB9CC\uC5D0 \uAC00\uC871\uC5D0\uAC8C \uB3CC\uC544\uAC14\uC2B5\uB2C8\uB2E4. \uD604\uC7A5\uC5D0 \uC788\uB358 \uC0C1\uC778\uB4E4\uACFC \uC2DC\uBBFC\uB4E4\uC774 \uC544\uC774\uC758 \uC774\uB3D9 \uACBD\uB85C\uB97C \uD655\uC778\uD558\uB294 \uB370 \uB3C4\uC6C0\uC744 \uC8FC\uC5C8\uC73C\uBA70 \uACBD\uCC30\uC740 \uAD00\uB828 \uB0B4\uC6A9\uC744 \uACF5\uC2DD\uC801\uC73C\uB85C \uACF5\uAC1C\uD588\uC2B5\uB2C8\uB2E4."
+  <EffectEntryList>k__BackingField:
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: -3
+  - <Effect>k__BackingField: 1
+    <Value>k__BackingField: 5
+  - <Effect>k__BackingField: 2
+    <Value>k__BackingField: 0
+  <ApprovedText>k__BackingField: "\uACF5\uAC1C\uC801\uC73C\uB85C \uD655\uC778\uB41C \uC0AC\uAC74\uC744 \uC815\uD655\uD788 \uBCF4\uB3C4\uD558\uBA74\uC11C \uC5B8\uB860\uC0AC\uC758 \uC2E0\uB8B0\uB3C4\uAC00 \uC62C\uB790\uC2B5\uB2C8\uB2E4. \uACBD\uCC30\uC5D0 \uB300\uD55C \uAE0D\uC815\uC801\uC778 \uC5EC\uB860\uC774 \uC0DD\uACA8 \uD601\uBA85\uB3C4\uB294 \uC18C\uD3ED \uB0AE\uC544\uC84C\uC2B5\uB2C8\uB2E4."
+  <Propensity>k__BackingField: 0
