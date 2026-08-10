@@ -28,12 +28,13 @@ MonoBehaviour:
   <EffectEntryList>k__BackingField:
   - <Effect>k__BackingField: 0
     <Value>k__BackingField: 7
-  - <Effect>k__BackingField: 0
+  - <Effect>k__BackingField: 1
     <Value>k__BackingField: -4
-  - <Effect>k__BackingField: 0
+  - <Effect>k__BackingField: 2
     <Value>k__BackingField: 5
   <ApprovedText>k__BackingField: "\uC774\uC5D0 \uB300\uD574 \uBA87\uBA87 \uAD6D\uBBFC\uB4E4\uC740
     \uBC18\uBC1C\uD558\uC600\uACE0 \uBE44\uBC00\uC2A4\uB7F0 \uC77C\uC774\uC5C8\uB358
     \uB9CC\uD07C \uB2E8\uB3C5 \uBCF4\uB3C4\uC774\uAE30\uC5D0 \uC2E0\uB8B0\uB3C4\uB294
     \uB5A8\uC5B4\uC84C\uC9C0\uB9CC \uD601\uBA85\uB3C4\uC640 \uD638\uAC10\uB3C4\uB294
     \uC62C\uB790\uC2B5\uB2C8\uB2E4."
+  <Propensity>k__BackingField: 0

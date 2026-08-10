@@ -1,16 +1,25 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Script.Papers;
 using Script.SO;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Script.GameManager.Components
 {
-    public class AppearingNewspapersManager : MonoBehaviour
+    public class AppearingNewsManager : MonoBehaviour
     {
-        [SerializeField] private List<NewspaperListSO> newspaperList;
-        [SerializeField] private List<NewspaperSO> toDayAppearingList = new();
-        [SerializeField] private NewspaperRequest paper;
+        [SerializeField] private List<NewsListSO> newspaperList;
+        [SerializeField] private List<NewsSO> toDayAppearingList = new();
+        [SerializeField] private NewsRequest paper;
         
+        private GameManager _manager;
+
+        private void Awake()
+        {
+            _manager = GetComponentInParent<GameManager>();
+        }
+
         public int NewDay(int day)
         {
             var today = newspaperList[day-1];

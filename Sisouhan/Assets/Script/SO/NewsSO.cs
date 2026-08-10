@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Script.SO
 {
     [CreateAssetMenu(fileName = "Newspaper", menuName = "Newspaper/data", order = 0)]
-    public class NewspaperSO : ScriptableObject
+    public class NewsSO : ScriptableObject
     {
         [field:SerializeField] public string ManagingID { get; private set; }
         [field:SerializeField] public int AppearingDay { get; private set; }
@@ -13,6 +13,7 @@ namespace Script.SO
         [field:SerializeField, TextArea(6,120)] public string Text { get; private set; }
         [field:SerializeField] public List<EffectEntry> EffectEntryList { get; private set; }
         [field:SerializeField, TextArea(6,120)] public string ApprovedText { get; private set; }
+        [field:SerializeField] public PropensityType Propensity { get; private set; }
         
     }
 
@@ -27,7 +28,12 @@ namespace Script.SO
     {
         Revolution,
         Reliability,
-        Like
-        
+        Danger
+    }
+
+    public enum PropensityType
+    {
+        Positive,
+        Negative
     }
 }

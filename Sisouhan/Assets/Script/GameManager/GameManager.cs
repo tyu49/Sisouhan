@@ -12,20 +12,16 @@ namespace Script.GameManager
         private int _newsLimit;
         [field: SerializeField] public int Revolution { get; private set; }
         [field: SerializeField] public int Reliability { get; private set; }
-        [field: SerializeField] public int Like { get; private set; }
-        private AppearingNewspapersManager _dailyNews;
-        private NewspaperManager _newsManager;
+        [field: SerializeField] public int Danger { get; private set; }
+        private AppearingNewsManager _dailyNews;
+        private NewsManager _newsManager;
 
         public event Action OnNewDay;
         
         private void Awake()
         {
-            _dailyNews = GetComponentInChildren<AppearingNewspapersManager>();
-            _newsManager = GetComponentInChildren<NewspaperManager>();
-        }
-
-        private void Start()
-        {
+            _dailyNews = GetComponentInChildren<AppearingNewsManager>();
+            _newsManager = GetComponentInChildren<NewsManager>();
         }
 
         [ContextMenu("NewDay")]
@@ -48,7 +44,7 @@ namespace Script.GameManager
             _dailyNews.Request();
         }
 
-        public void Choose(NewspaperSO data, bool choice)
+        public void Choose(NewsSO data, bool choice)
         {
             if(choice)
                 _newsManager.Approve(data);

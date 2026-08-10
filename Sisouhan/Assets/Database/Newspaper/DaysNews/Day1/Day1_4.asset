@@ -23,9 +23,15 @@ MonoBehaviour:
     \uB298\uB838\uC2B5\uB2C8\uB2E4 "
   <EffectEntryList>k__BackingField:
   - <Effect>k__BackingField: 0
-    <Value>k__BackingField: 0
+    <Value>k__BackingField: -10
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: 5
   - <Effect>k__BackingField: 0
     <Value>k__BackingField: 0
-  - <Effect>k__BackingField: 0
-    <Value>k__BackingField: 0
-  <ApprovedText>k__BackingField: test four
+  <ApprovedText>k__BackingField: "\uC774\uC5D0 \uB300\uD574 \uB9CE\uC740 \uAD6D\uBBFC\uC774
+    \uBC18\uBC1C\uD558\uC600\uC9C0\uB9CC, \uC774\uD6C4 \uB2E4\uB978 \uC5B8\uB860\uC0AC\uC5D0\uC11C
+    \uC815\uBD80\uAC00 \uC774\uC5D0 \uB300\uD55C \uC751\uB2F5\uC744 \uD588\uB2E4\uACE0
+    \uBCF4\uACE0 \uD558\uBA74 \uC6B0\uB9AC\uCABD \uC2E0\uBB38\uC0AC\uC5D0 \uB300\uD55C
+    \uC815\uBCF4\uB825\uACFC \uC2E0\uB8B0\uB3C4\uC5D0 \uC758\uBB38\uC744 \uAC00\uC9C0\uAC8C
+    \uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+  <Propensity>k__BackingField: 0

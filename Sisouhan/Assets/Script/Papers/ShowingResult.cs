@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Script.Papers
 {
-    public class ResultPaper : MonoBehaviour
+    public class ShowingResult : MonoBehaviour
     {
         [Header("Component")]
         [SerializeField]private RectTransform rectTrm;

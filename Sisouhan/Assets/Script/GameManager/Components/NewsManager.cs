@@ -6,15 +6,17 @@ using UnityEngine;
 
 namespace Script.GameManager.Components
 {
-    public class NewspaperManager : MonoBehaviour
+    public class NewsManager : MonoBehaviour
     {
-        [SerializeField] private ResultPaper resultPaper;
+        [SerializeField] private ShowingResult showingResult;
         
         private GameManager _manager;
-        [field : SerializeField]public List<NewspaperSO> ApprovedNewspapers { get; private set; } = new();
-        [field : SerializeField]public List<NewspaperSO> RejectedNewspapers { get; private set; } = new();
+        [field : SerializeField]public List<NewsSO> ApprovedNewspapers { get; private set; } = new();
+        [field : SerializeField]public List<NewsSO> RejectedNewspapers { get; private set; } = new();
         public string ResultText { get; private set; }
         public string ResultTitle { get; private set; }
+
+        public event Action OnValueChanged;
 
         private void Awake()
         {
@@ -29,13 +31,13 @@ namespace Script.GameManager.Components
             RejectedNewspapers.Clear();
         }
 
-        public void Approve(NewspaperSO newspaper)
+        public void Approve(NewsSO news)
         {
-            ApprovedNewspapers.Add(newspaper);
+            ApprovedNewspapers.Add(news);
         }
-        public void Reject(NewspaperSO newspaper)
+        public void Reject(NewsSO news)
         {
-            RejectedNewspapers.Add(newspaper);
+            RejectedNewspapers.Add(news);
         }
 
         [ContextMenu("ShowResult")]
@@ -45,17 +47,17 @@ namespace Script.GameManager.Components
             ResultText = string.Empty;
             for (int i = 0; i < ApprovedNewspapers.Count; i++)
             {
-                ResultText += $"{i + 1}호 뉴스 : " + ApprovedNewspapers[i].ApprovedText+"\n";
+                ResultText += $"제 {i + 1}보: " + ApprovedNewspapers[i].ApprovedText+"\n";
             }
             GetResult();
-            resultPaper.SetResultText(ResultTitle, ResultText);
+            showingResult.SetResultText(ResultTitle, ResultText);
         }
 
         public void GetResult()
         {
             int revolution = 0;
             int reliability = 0;
-            int like = 0;
+            int danger = 0;
             foreach (var news in ApprovedNewspapers)
             {
                 foreach (var entry in news.EffectEntryList)
@@ -68,12 +70,13 @@ namespace Script.GameManager.Components
                         case EffectType.Reliability:
                             reliability += entry.Value;
                             break;
-                        case EffectType.Like:
-                            like += entry.Value;
+                        case EffectType.Danger:
+                            danger += entry.Value;
                             break;
                     }
                 }
             }
+            OnValueChanged?.Invoke();
         }
     }
 }

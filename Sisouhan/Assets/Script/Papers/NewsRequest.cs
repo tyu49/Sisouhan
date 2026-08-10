@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Script.Papers
 {
-    public class NewspaperRequest : MonoBehaviour
+    public class NewsRequest : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI headLine;
         [SerializeField] private TextMeshProUGUI text;
@@ -22,7 +22,7 @@ namespace Script.Papers
         private WaitForSeconds AppearDelay => new WaitForSeconds(appearingDelay);
         private WaitForSeconds MoveDelay => new WaitForSeconds(moveDelay);
         private RectTransform _rectTrm;
-        private NewspaperSO _myNews;
+        private NewsSO _myNews;
 
 
         private void Awake()
@@ -30,9 +30,9 @@ namespace Script.Papers
             _rectTrm = GetComponent<RectTransform>();
         }
 
-        public void GetNewspaper(NewspaperSO data) => StartCoroutine(GetNewspaperCo(data));
+        public void GetNewspaper(NewsSO data) => StartCoroutine(GetNewspaperCo(data));
 
-        private IEnumerator GetNewspaperCo(NewspaperSO data)
+        private IEnumerator GetNewspaperCo(NewsSO data)
         {
             _myNews = data;
             headLine.SetText(_myNews.HeadLine);
