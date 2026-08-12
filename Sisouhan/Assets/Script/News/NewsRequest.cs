@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
 using Script.SO;
 using Script.StaticClass;
 using TMPro;
 using UnityEngine;
 
-namespace Script.Papers
+namespace Script.News
 {
     public class NewsRequest : MonoBehaviour
     {

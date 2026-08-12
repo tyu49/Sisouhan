@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Script.Papers
+namespace Script.News
 {
     public class InformationPaper : MonoBehaviour
     {

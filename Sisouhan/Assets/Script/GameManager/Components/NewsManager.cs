@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Script.Papers;
+using Script.News;
 using Script.SO;
 using UnityEngine;
 
