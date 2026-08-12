@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ee328e4d33401e810fb1e05a1e5d31, type: 3}
+  m_Name: Day6_10
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
+  <ManagingID>k__BackingField: day_6_10
+  <AppearingDay>k__BackingField: 6
+  <HeadLine>k__BackingField: "XX\uAD11\uC7A5\uC73C\uB85C \uBAA8\uC785\uC2DC\uB2E4, \uCE68\uBB35 \uB9D0\uC790"
+  <Text>k__BackingField: "\uC815\uBD80\uC758 \uC9D1\uD68C \uCC38\uAC00\uC790 \uC815\uBCF4 \uC218\uC9D1 \uD655\uB300\uC5D0 \uBC18\uB300\uD558\uB294 \uC9D1\uD68C\uAC00 \uC624\uB298 \uC624\uD6C4 XX\uAD11\uC7A5\uC5D0\uC11C \uC5F4\uB9BD\uB2C8\uB2E4. \uAE30\uC0AC\uC5D0\uC11C\uB294 \uC2DC\uBBFC\uB4E4\uC5D0\uAC8C \uC9C1\uC811 \uAD11\uC7A5\uC73C\uB85C \uB098\uC640 \uC9D1\uD68C\uC5D0 \uCC38\uC5EC\uD558\uC790\uACE0 \uCD09\uAD6C\uD558\uBA70 \uAC00\uB2A5\uD55C \uB9CE\uC740 \uC0AC\uB78C\uC774 \uD568\uAED8\uD574\uC57C \uD55C\uB2E4\uACE0 \uC8FC\uC7A5\uD588\uC2B5\uB2C8\uB2E4."
+  <EffectEntryList>k__BackingField:
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: -9
+  - <Effect>k__BackingField: 1
+    <Value>k__BackingField: -12
+  - <Effect>k__BackingField: 2
+    <Value>k__BackingField: 13
+  <ApprovedText>k__BackingField: "\uC5B8\uB860\uC774 \uC0AC\uC2E4 \uC804\uB2EC\uC744 \uB118\uC5B4 \uC9C1\uC811 \uC9D1\uD68C \uCC38\uC5EC\uB97C \uC694\uAD6C\uD588\uB2E4\uB294 \uBE44\uD310\uC774 \uAC70\uC138\uAC8C \uC77C\uC5C8\uC2B5\uB2C8\uB2E4. \uAE30\uC874 \uC815\uBD80 \uBE44\uD310\uC5D0 \uACF5\uAC10\uD558\uB358 \uC2DC\uBBFC\uB4E4 \uC77C\uBD80\uB3C4 \uC5B8\uB860\uC0AC\uC758 \uD589\uB3D9\uC5D0 \uAC70\uB9AC\uB97C \uB450\uBA74\uC11C \uD601\uBA85\uB3C4\uC640 \uC2E0\uB8B0\uB3C4\uAC00 \uD568\uAED8 \uB5A8\uC5B4\uC84C\uC2B5\uB2C8\uB2E4."
+  <Propensity>k__BackingField: 0
