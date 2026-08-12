@@ -11,7 +11,7 @@ namespace Script.GameManager.Components
     {
         [SerializeField] private List<NewsListSO> newspaperList;
         [SerializeField] private List<NewsSO> toDayAppearingList = new();
-        [SerializeField] private NewsRequest paper;
+        [SerializeField] private ScreenSetter screen;
         
         private GameManager _manager;
 
@@ -40,7 +40,7 @@ namespace Script.GameManager.Components
         [ContextMenu("Request")]
         public void Request()
         {
-            paper.GetNews(toDayAppearingList[0]);
+            screen.SetNews(toDayAppearingList[0]);
             toDayAppearingList.RemoveAt(0);
         }
     }

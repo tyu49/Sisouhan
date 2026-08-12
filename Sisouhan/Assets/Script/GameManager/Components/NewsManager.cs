@@ -8,14 +8,13 @@ namespace Script.GameManager.Components
 {
     public class NewsManager : MonoBehaviour
     {
-        [SerializeField] private ShowingResult showingResult;
+        [SerializeField] private ScreenSetter screen;
         
         private GameManager _manager;
         [field : SerializeField]public List<NewsSO> ApprovedNewspapers { get; private set; } = new();
         [field : SerializeField]public List<NewsSO> RejectedNewspapers { get; private set; } = new();
         public string ResultText { get; private set; }
         public string ResultTitle { get; private set; }
-        private bool _canChangeNext;
         public event Action OnValueChanged;
 
         private void Awake()
@@ -43,22 +42,16 @@ namespace Script.GameManager.Components
         [ContextMenu("ShowResult")]
         public void ShowResult(bool next)
         {
-            if (next)
-            {
-                _canChangeNext = true;
-            }            
             if (ApprovedNewspapers.Count <= 0)
             {
-                _canChangeNext = false;
+                screen.SetProcess(3);
                 return;
             }
-
-            if (!_canChangeNext) return;
             ResultTitle = string.Empty;
             ResultText = string.Empty;
             ResultTitle = ApprovedNewspapers[0].HeadLine;
             ResultText = ApprovedNewspapers[0].ApprovedText;
-            showingResult.SetResultText(ResultTitle, ResultText);
+            screen.SetResult(ResultTitle, ResultText);
             ApprovedNewspapers.RemoveAt(0);
         }
 
