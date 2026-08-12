@@ -40,7 +40,7 @@ namespace Script.GameManager.Components
         [ContextMenu("Request")]
         public void Request()
         {
-            paper.GetNewspaper(toDayAppearingList[0]);
+            paper.GetNews(toDayAppearingList[0]);
             toDayAppearingList.RemoveAt(0);
         }
     }

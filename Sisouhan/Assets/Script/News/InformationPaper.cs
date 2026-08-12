@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Script.Papers
     {
         [SerializeField] private TextMeshProUGUI title;
         [SerializeField] private TextMeshProUGUI mainText;
+        [SerializeField] private List<CanvasGroup> groups;
 
         public void NewDayShowInformation(int day, InformationSO data)
         {

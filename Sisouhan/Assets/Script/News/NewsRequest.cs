@@ -1,6 +1,8 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 using Script.SO;
+using Script.StaticClass;
 using TMPro;
 using UnityEngine;
 
@@ -10,17 +12,9 @@ namespace Script.Papers
     {
         [SerializeField] private TextMeshProUGUI headLine;
         [SerializeField] private TextMeshProUGUI text;
-        [SerializeField] private CanvasGroup group;
+        [SerializeField] private List<CanvasGroup> groups;
         [SerializeField] private GameManager.GameManager manager;
-        [SerializeField] private Vector2 startPosition;
-        [SerializeField] private Vector2 endPosition;
-        [SerializeField] private float appearingDelay;
-        [SerializeField] private Vector2 approvePosition;
-        [SerializeField] private Vector2 rejectedPosition;
-        [SerializeField] private float moveDelay;
 
-        private WaitForSeconds AppearDelay => new WaitForSeconds(appearingDelay);
-        private WaitForSeconds MoveDelay => new WaitForSeconds(moveDelay);
         private RectTransform _rectTrm;
         private NewsSO _myNews;
 
@@ -30,29 +24,26 @@ namespace Script.Papers
             _rectTrm = GetComponent<RectTransform>();
         }
 
-        public void GetNewspaper(NewsSO data) => StartCoroutine(GetNewspaperCo(data));
+        public void GetNews(NewsSO data) => StartCoroutine(GetNewsCo(data));
 
-        private IEnumerator GetNewspaperCo(NewsSO data)
+        private IEnumerator GetNewsCo(NewsSO data)
         {
             _myNews = data;
             headLine.SetText(_myNews.HeadLine);
             text.SetText(_myNews.Text);
-            group.interactable = false;
-            _rectTrm.anchoredPosition = startPosition;
-            _rectTrm.DOAnchorPos(endPosition, appearingDelay).SetEase(Ease.OutBack);
-            yield return AppearDelay;
-            group.interactable = true;
+            InteractChange.TurnOff(groups);
+            InteractChange.TurnOn(groups);
+            yield break;
         }
 
         private void GetResult(bool choice) => StartCoroutine(GetResultCo(choice));
 
         private IEnumerator GetResultCo(bool choice)
         {
-            group.interactable = false;
+            InteractChange.TurnOff(groups);
             manager.Choose(_myNews, choice);
-            _rectTrm.DOAnchorPos(choice ? approvePosition : rejectedPosition, moveDelay).SetEase(Ease.OutQuint);
-            yield return MoveDelay;
             manager.GetNews();
+            yield break;
         }
     }
 }
