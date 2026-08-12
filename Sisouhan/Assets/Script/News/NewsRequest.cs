@@ -14,13 +14,11 @@ namespace Script.News
         [SerializeField] private List<CanvasGroup> groups;
         [SerializeField] private GameManager.GameManager manager;
 
-        private RectTransform _rectTrm;
         private NewsSO _myNews;
 
 
         private void Awake()
         {
-            _rectTrm = GetComponent<RectTransform>();
         }
 
         public void GetNews(NewsSO data) => StartCoroutine(GetNewsCo(data));

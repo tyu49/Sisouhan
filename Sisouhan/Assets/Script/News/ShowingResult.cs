@@ -9,7 +9,6 @@ namespace Script.News
 {
     public class ShowingResult : MonoBehaviour
     {
-        [SerializeField]private RectTransform rectTrm;
         [SerializeField] private TextMeshProUGUI title;
         [SerializeField] private TextMeshProUGUI mainText;
     

@@ -36,7 +36,8 @@ namespace Script.GameManager
         {
             if (_newsLimit <= 0)
             {
-                _newsManager.ShowResult();
+                _newsManager.ShowResult(true);
+                _newsManager.GetResult();
                 return;
             }
 
@@ -50,6 +51,7 @@ namespace Script.GameManager
                 _newsManager.Approve(data);
             else
                 _newsManager.Reject(data);
+            GetNews();
         }
         
     }

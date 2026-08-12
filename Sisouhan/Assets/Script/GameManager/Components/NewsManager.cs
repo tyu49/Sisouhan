@@ -15,7 +15,7 @@ namespace Script.GameManager.Components
         [field : SerializeField]public List<NewsSO> RejectedNewspapers { get; private set; } = new();
         public string ResultText { get; private set; }
         public string ResultTitle { get; private set; }
-
+        private bool _canChangeNext;
         public event Action OnValueChanged;
 
         private void Awake()
@@ -41,16 +41,30 @@ namespace Script.GameManager.Components
         }
 
         [ContextMenu("ShowResult")]
-        public void ShowResult()
+        public void ShowResult(bool next)
         {
-            ResultTitle = $"{_manager.CurrentDay}일차";
-            ResultText = string.Empty;
-            for (int i = 0; i < ApprovedNewspapers.Count; i++)
+            if (next)
             {
-                ResultText += $"제 {i + 1}보: " + ApprovedNewspapers[i].ApprovedText+"\n";
+                _canChangeNext = true;
+            }            
+            if (ApprovedNewspapers.Count <= 0)
+            {
+                _canChangeNext = false;
+                return;
             }
-            GetResult();
+
+            if (!_canChangeNext) return;
+            ResultTitle = string.Empty;
+            ResultText = string.Empty;
+            ResultTitle = ApprovedNewspapers[0].HeadLine;
+            ResultText = ApprovedNewspapers[0].ApprovedText;
             showingResult.SetResultText(ResultTitle, ResultText);
+            ApprovedNewspapers.RemoveAt(0);
+        }
+
+        public void NextResult()
+        {
+            ShowResult(false);
         }
 
         public void GetResult()

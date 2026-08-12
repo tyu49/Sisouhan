@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Script.News
 {
-    public class InformationPaper : MonoBehaviour
+    public class ShowInformation : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI title;
         [SerializeField] private TextMeshProUGUI mainText;
