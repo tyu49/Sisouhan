@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c646caea812a4381a684625d34070c4a, type: 3}
+  m_Name: Day6
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperListSO
+  <AppearingDay>k__BackingField: 6
+  <NewsPaperList>k__BackingField:
+  - {fileID: 11400000, guid: d0b5c968cdf54985ab93441d9f2bbb52, type: 2}
+  - {fileID: 11400000, guid: 58e779cf0b7b4b0db24d5fb9d56cc2a0, type: 2}
+  - {fileID: 11400000, guid: 386815da25cd4f128858e992ee622786, type: 2}
+  - {fileID: 11400000, guid: dfca548aad4a4aa5a96adf24118bf9d8, type: 2}
+  - {fileID: 11400000, guid: 14558564481842c688a2213033a338b3, type: 2}
+  - {fileID: 11400000, guid: bd9b85d1880e400ba60d80f31b3fd7e9, type: 2}
+  - {fileID: 11400000, guid: 3f11347ee95a4ea58035a202216aeccb, type: 2}
+  - {fileID: 11400000, guid: 3b249facecc04b4084b53f73b4ce7aaa, type: 2}
+  - {fileID: 11400000, guid: f3d96ad9444e4ea7883cb40c31a7456a, type: 2}
+  - {fileID: 11400000, guid: 28df38498d764f7c8fec403a4cb8704c, type: 2}
+  - {fileID: 11400000, guid: 91fa70afa45e4ea1b647082c49130aa9, type: 2}
+  - {fileID: 11400000, guid: 5f05b93593ab4fe2b0c5f90d99e397d7, type: 2}
+  <AppearingLimit>k__BackingField: 8

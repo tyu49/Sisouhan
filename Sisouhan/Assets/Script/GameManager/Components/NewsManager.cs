@@ -15,13 +15,17 @@ namespace Script.GameManager.Components
         [field : SerializeField]public List<NewsSO> RejectedNewspapers { get; private set; } = new();
         public string ResultText { get; private set; }
         public string ResultTitle { get; private set; }
-        public event Action OnValueChanged;
+        
 
         private void Awake()
         {
             _manager = GetComponentInParent<GameManager>();
-
             _manager.OnNewDay += NewDay;
+        }
+
+        private void OnDestroy()
+        {
+            _manager.OnNewDay -= NewDay;
         }
 
         private void NewDay()
@@ -40,7 +44,7 @@ namespace Script.GameManager.Components
         }
 
         [ContextMenu("ShowResult")]
-        public void ShowResult(bool next)
+        public void ShowResult()
         {
             if (ApprovedNewspapers.Count <= 0)
             {
@@ -57,7 +61,7 @@ namespace Script.GameManager.Components
 
         public void NextResult()
         {
-            ShowResult(false);
+            ShowResult();
         }
 
         public void GetResult()
@@ -83,7 +87,21 @@ namespace Script.GameManager.Components
                     }
                 }
             }
-            OnValueChanged?.Invoke();
+
+            if (_manager.Revolution >= 80)
+            {
+                revolution += 15;
+                if (revolution is >= 0 and <= 15)
+                    revolution = 0;
+            }
+            else if (_manager.Revolution >= 80)
+            {
+                revolution -= 20;
+                if (revolution is <= 0 and >= -20)
+                    revolution = 0;
+            }
+            _manager.ChangeValue(revolution, reliability, danger);
         }
+        
     }
 }

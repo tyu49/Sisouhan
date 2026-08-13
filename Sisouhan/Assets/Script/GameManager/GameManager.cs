@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Script.GameManager.Components;
+using Script.News;
 using Script.SO;
 using UnityEngine;
 
@@ -13,9 +14,12 @@ namespace Script.GameManager
         [field: SerializeField] public int Revolution { get; private set; }
         [field: SerializeField] public int Reliability { get; private set; }
         [field: SerializeField] public int Danger { get; private set; }
+        [SerializeField] private ScreenSetter screen;
         private AppearingNewsManager _dailyNews;
         private NewsManager _newsManager;
 
+        public event Action OnValueChanged;
+        
         public event Action OnNewDay;
         
         private void Awake()
@@ -25,10 +29,11 @@ namespace Script.GameManager
         }
 
         [ContextMenu("NewDay")]
-        private void NewDay()
+        public void NewDay()
         {
+            ChangeValue(0,0,-10);
+            CurrentDay++;
             _newsLimit = _dailyNews.NewDay(CurrentDay);
-            OnNewDay?.Invoke();
         }
 
         [ContextMenu("GetNews")]
@@ -36,8 +41,7 @@ namespace Script.GameManager
         {
             if (_newsLimit <= 0)
             {
-                _newsManager.ShowResult(true);
-                _newsManager.GetResult();
+                screen.SetProcess(2);
                 return;
             }
 
@@ -52,6 +56,20 @@ namespace Script.GameManager
             else
                 _newsManager.Reject(data);
             GetNews();
+        }
+
+        public void ChangeValue(int rev, int rel, int danger)
+        {
+            Revolution += rev;
+            Reliability += rel;
+            Danger += danger;
+            if (Danger <= 0)
+                Danger = 0;
+            if (Reliability <= 0)
+                Reliability = 0;
+            if (Revolution <= 0)
+                Revolution = 0;
+            OnValueChanged?.Invoke();
         }
         
     }

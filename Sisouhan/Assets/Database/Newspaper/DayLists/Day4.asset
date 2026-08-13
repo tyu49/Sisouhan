@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c646caea812a4381a684625d34070c4a, type: 3}
+  m_Name: Day4
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperListSO
+  <AppearingDay>k__BackingField: 4
+  <NewsPaperList>k__BackingField:
+  - {fileID: 11400000, guid: cdbf173a7b064105a31e6c87c61835be, type: 2}
+  - {fileID: 11400000, guid: 89b8276c39824320867af86f696509bb, type: 2}
+  - {fileID: 11400000, guid: e610c623e3744a7fb78ce92b0a2225ce, type: 2}
+  - {fileID: 11400000, guid: 21c5f9fecfb04f8380a9f95a18fbd2c1, type: 2}
+  - {fileID: 11400000, guid: 71db14c67a4b464a9b6cca81abc431cf, type: 2}
+  - {fileID: 11400000, guid: ef971206dec34d8daa5bc6522ad0fb2f, type: 2}
+  - {fileID: 11400000, guid: ec685f40662d411aa2fc1aeda9bf7c22, type: 2}
+  - {fileID: 11400000, guid: 57869e596f864dec860e6a5fd475c9a3, type: 2}
+  <AppearingLimit>k__BackingField: 5
