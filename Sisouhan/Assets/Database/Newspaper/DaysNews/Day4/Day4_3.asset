@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
   <ManagingID>k__BackingField: day_4_3
   <AppearingDay>k__BackingField: 4
-  <HeadLine>k__BackingField: "\uC751\uAE09\uC2E4 \uC9C0\uC6D0 \uD655\uCDA9\uB42C\uB2E4, \uACF5\uBC31 \uC904\uAE4C"
-  <Text>k__BackingField: "\uBCF4\uAC74\uBCF5\uC9C0\uBD80\uB294 \uC9C0\uBC29 \uC758\uB8CC\uC6D0\uC758 \uC751\uAE09\uC2E4 \uC778\uB825\uACFC \uC7A5\uBE44 \uC9C0\uC6D0 \uC608\uC0B0\uC744 \uD655\uB300\uD55C\uB2E4\uACE0 \uBC1C\uD45C\uD588\uC2B5\uB2C8\uB2E4. \uC751\uAE09\uC758\uD559\uACFC \uC804\uBB38\uC778\uB825 \uD655\uBCF4\uC640 \uB178\uD6C4 \uC7A5\uBE44 \uAD50\uCCB4\uC5D0 \uC608\uC0B0\uC774 \uC6B0\uC120 \uD22C\uC785\uB420 \uC608\uC815\uC785\uB2C8\uB2E4."
+  <HeadLine>k__BackingField: "\uD6A1\uB839 \uACFC\uC7A5 \uCE5C\uCC99 \uC2E0\uC0C1 \uD568\uAED8 \uACF5\uAC1C"
+  <Text>k__BackingField: "\uBCF4\uC870\uAE08 \uD6A1\uB839 \uD610\uC758\uB85C \uAE30\uC18C\uB41C XX\uC2DC \uACFC\uC7A5\uC758 \uCE5C\uCC99\uC740 \uBC94\uC8C4\uC640 \uAD00\uB828\uC774 \uC5C6\uC5C8\uC9C0\uB9CC \uAE30\uC0AC\uC5D0\uB294 \uD574\uB2F9 \uCE5C\uCC99\uC758 \uC2E0\uC0C1\uC815\uBCF4\uAC00 \uD568\uAED8 \uC2E4\uB838\uC2B5\uB2C8\uB2E4."
   <EffectEntryList>k__BackingField:
-  - <Effect>k__BackingField: 0
-    <Value>k__BackingField: -6
-  - <Effect>k__BackingField: 1
-    <Value>k__BackingField: -20
-  - <Effect>k__BackingField: 2
-    <Value>k__BackingField: 0
-  <ApprovedText>k__BackingField: "\uC9C0\uC5ED \uC758\uB8CC \uAC1C\uC120 \uC18C\uC2DD\uC5D0 \uC815\uBD80\uB97C \uAE0D\uC815\uC801\uC73C\uB85C \uD3C9\uAC00\uD558\uB294 \uC2DC\uBBFC\uC774 \uB298\uC5B4 \uD601\uBA85\uB3C4\uB294 \uB0AE\uC544\uC84C\uC2B5\uB2C8\uB2E4. \uB0B4\uC6A9 \uC790\uCCB4\uB294 \uC0AC\uC2E4\uC774\uC5C8\uC9C0\uB9CC \uC81C\uBAA9\uC758 \uB208\uC5D0 \uB744\uB294 \uC624\uD0C8\uC790\uB85C \uC5B8\uB860\uC0AC\uC758 \uC2E0\uB8B0\uB3C4\uAC00 \uB9CE\uC774 \uB5A8\uC5B4\uC84C\uC2B5\uB2C8\uB2E4."
+  - <EffectType>k__BackingField: 0
+    <EffectValue>k__BackingField: 0
+  - <EffectType>k__BackingField: 1
+    <EffectValue>k__BackingField: 0
+  - <EffectType>k__BackingField: 2
+    <EffectValue>k__BackingField: 0
+  <ApprovedText>k__BackingField: ""
   <Propensity>k__BackingField: 0

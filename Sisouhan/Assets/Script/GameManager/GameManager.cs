@@ -28,12 +28,18 @@ namespace Script.GameManager
             _newsManager = GetComponentInChildren<NewsManager>();
         }
 
+        private void Start()
+        {
+            screen.SetProcess(3);
+        }
+
         [ContextMenu("NewDay")]
         public void NewDay()
         {
             ChangeValue(0,0,-10);
             CurrentDay++;
             _newsLimit = _dailyNews.NewDay(CurrentDay);
+            OnNewDay?.Invoke();
         }
 
         [ContextMenu("GetNews")]

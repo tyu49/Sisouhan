@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ee328e4d33401e810fb1e05a1e5d31, type: 3}
+  m_Name: Day4_10
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.NewspaperSO
+  <ManagingID>k__BackingField: day_4_10
+  <AppearingDay>k__BackingField: 4
+  <HeadLine>k__BackingField: "\uC2DC\uC7A5 \uCE21\uADFC, \uACF5\uC0AC \uC218\uC8FC \uCCAD\uD0C1 \uD610\uC758"
+  <Text>k__BackingField: "\uAC80\uCC30\uC740 XX\uC2DC\uC7A5\uACFC \uAC00\uAE4C\uC6B4 \uC778\uC0AC\uAC00 \uC2DC \uBC1C\uC8FC \uACF5\uC0AC \uC5C5\uCCB4 \uC120\uC815 \uACFC\uC815\uC5D0 \uBD80\uB2F9\uD55C \uCCAD\uD0C1\uC744 \uD55C \uD610\uC758\uB85C \uAE30\uC18C\uB410\uB2E4\uACE0 \uBC1C\uD45C\uD588\uC2B5\uB2C8\uB2E4."
+  <EffectEntryList>k__BackingField:
+  - <EffectType>k__BackingField: 0
+    <EffectValue>k__BackingField: 0
+  - <EffectType>k__BackingField: 1
+    <EffectValue>k__BackingField: 0
+  - <EffectType>k__BackingField: 2
+    <EffectValue>k__BackingField: 0
+  <ApprovedText>k__BackingField: ""
+  <Propensity>k__BackingField: 0
