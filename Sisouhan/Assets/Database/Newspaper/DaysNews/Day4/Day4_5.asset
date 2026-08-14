@@ -17,11 +17,11 @@ MonoBehaviour:
   <HeadLine>k__BackingField: "\uC9D1\uD68C \uCC38\uC5EC \uAD8C\uC720\uD587\uB2E4, \uB17C\uB780"
   <Text>k__BackingField: "XX\uAD11\uC7A5 \uC9D1\uD68C\uB97C \uB2E4\uB8EC \uAE30\uC0AC\uC5D0\uC11C \uB3C5\uC790\uB4E4\uC5D0\uAC8C \uC9D1\uD68C \uCC38\uC5EC\uB97C \uC9C1\uC811 \uAD8C\uD558\uB294 \uBB38\uAD6C\uB97C \uC2E4\uC5C8\uC2B5\uB2C8\uB2E4."
   <EffectEntryList>k__BackingField:
-  - <EffectType>k__BackingField: 0
-    <EffectValue>k__BackingField: 0
-  - <EffectType>k__BackingField: 1
-    <EffectValue>k__BackingField: 0
-  - <EffectType>k__BackingField: 2
-    <EffectValue>k__BackingField: 0
-  <ApprovedText>k__BackingField: ""
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: -10
+  - <Effect>k__BackingField: 1
+    <Value>k__BackingField: -20
+  - <Effect>k__BackingField: 2
+    <Value>k__BackingField: 14
+  <ApprovedText>k__BackingField: "\uC9C1\uC811\uC801\uC778 \uCC38\uC5EC \uAD8C\uC720\uC5D0 \uB300\uD55C \uBE44\uD310\uACFC \uC81C\uBAA9\uC758 \uC624\uD0C8\uC790\uAC00 \uACB9\uCE58\uBA70 \uC5B8\uB860\uC0AC\uC758 \uC2E0\uB8B0\uB3C4\uAC00 \uD06C\uAC8C \uB5A8\uC5B4\uC84C\uC2B5\uB2C8\uB2E4."
   <Propensity>k__BackingField: 0

@@ -17,11 +17,11 @@ MonoBehaviour:
   <HeadLine>k__BackingField: "\uB178\uC778\uBCF5\uC9C0 \uC904\uC774\uACE0 \uCCAD\uB144\uBCF5\uC9C0 \uB298\uB9B0\uB2E4"
   <Text>k__BackingField: "\uBCF4\uAC74\uBCF5\uC9C0\uBD80 \uC7A5\uAD00\uC740 \uAE30\uC790\uD68C\uACAC\uC5D0\uC11C \uC77C\uBD80 \uB178\uC778 \uB300\uC0C1 \uBCF5\uC9C0\uC0AC\uC5C5\uC758 \uC608\uC0B0\uC744 \uC904\uC774\uB294 \uB300\uC2E0 \uCCAD\uB144 \uC8FC\uAC70\u00B7\uCDE8\uC5C5 \uC9C0\uC6D0 \uC608\uC0B0\uC744 \uD655\uB300\uD558\uACA0\uB2E4\uACE0 \uBC1D\uD614\uC2B5\uB2C8\uB2E4. \uC7A5\uAD00\uC740 \uD55C\uC815\uB41C \uC608\uC0B0\uC744 \uCCAD\uB144\uCE35 \uC9C0\uC6D0\uC5D0 \uB354 \uC9D1\uC911\uD558\uAE30 \uC704\uD55C \uC870\uC815\uC774\uB77C\uACE0 \uC124\uBA85\uD588\uC2B5\uB2C8\uB2E4."
   <EffectEntryList>k__BackingField:
-  - <EffectType>k__BackingField: 0
-    <EffectValue>k__BackingField: 0
-  - <EffectType>k__BackingField: 1
-    <EffectValue>k__BackingField: 0
-  - <EffectType>k__BackingField: 2
-    <EffectValue>k__BackingField: 0
-  <ApprovedText>k__BackingField: ""
+  - <Effect>k__BackingField: 0
+    <Value>k__BackingField: 0
+  - <Effect>k__BackingField: 1
+    <Value>k__BackingField: 5
+  - <Effect>k__BackingField: 2
+    <Value>k__BackingField: 0
+  <ApprovedText>k__BackingField: "\uC138\uB300\uBCC4\uB85C \uBC18\uC751\uC774 \uC5C7\uAC08\uB838\uC9C0\uB9CC \uACF5\uC2DD \uBC1C\uD45C \uB0B4\uC6A9\uC744 \uC815\uD655\uD558\uAC8C \uC804\uB2EC\uD558\uBA74\uC11C \uC5B8\uB860\uC0AC\uC758 \uC2E0\uB8B0\uB3C4\uB294 \uC62C\uB790\uC2B5\uB2C8\uB2E4. \uC815\uBD80 \uC804\uCCB4\uC5D0 \uB300\uD55C \uC5EC\uB860 \uBCC0\uD654\uB294 \uD06C\uC9C0 \uC54A\uC558\uC2B5\uB2C8\uB2E4."
   <Propensity>k__BackingField: 0

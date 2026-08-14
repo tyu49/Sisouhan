@@ -37,14 +37,16 @@ namespace Script.UI
         {
             text.SetText(string.Empty);
             group.blocksRaycasts = true;
-            group.DOFade(1f, fadeTime);
+            group.alpha = 1;
+            // group.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
             yield return FadeDelay;
             screen.ChangeToAsa();
             text.SetText($"Day {manager.CurrentDay}");
             yield return TextDelay;
             text.SetText(string.Empty);
-            group.DOFade(0f, fadeTime);
-            yield return FadeDelay;
+            group.alpha = 0;
+            // group.DOFade(0f, fadeTime);
+            // yield return FadeDelay;
             group.blocksRaycasts = false;
             screen.SetProcess(0);
         }

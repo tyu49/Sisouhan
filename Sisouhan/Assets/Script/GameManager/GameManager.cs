@@ -12,7 +12,7 @@ namespace Script.GameManager
         [field : SerializeField]public int CurrentDay { get; private set; }
         private int _newsLimit;
         [field: SerializeField] public int Revolution { get; private set; }
-        [field: SerializeField] public int Reliability { get; private set; }
+        [field: SerializeField] public int Reliability { get; private set; } = 50;
         [field: SerializeField] public int Danger { get; private set; }
         [SerializeField] private ScreenSetter screen;
         private AppearingNewsManager _dailyNews;
@@ -36,7 +36,7 @@ namespace Script.GameManager
         [ContextMenu("NewDay")]
         public void NewDay()
         {
-            ChangeValue(0,0,-10);
+            ChangeValue(-10,0,0);
             CurrentDay++;
             _newsLimit = _dailyNews.NewDay(CurrentDay);
             OnNewDay?.Invoke();
@@ -75,6 +75,12 @@ namespace Script.GameManager
                 Reliability = 0;
             if (Revolution <= 0)
                 Revolution = 0;
+            if (Danger >= 100)
+                Danger = 100;
+            if (Reliability >= 100)
+                Reliability = 100;
+            if (Revolution >= 100)
+                Revolution = 100;
             OnValueChanged?.Invoke();
         }
         

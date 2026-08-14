@@ -131,13 +131,6 @@ namespace Script.News
         {
             background.sprite = backgroundSprites[0];
         }
-
-        [ContextMenu("Test")]
-        private void Test()
-        {
-            manager.NewDay();
-            processthird?.Invoke();
-        }
         
     }
 }
