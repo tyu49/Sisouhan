@@ -13,7 +13,6 @@ namespace Script.SO
         [field:SerializeField, TextArea(6,120)] public string Text { get; private set; }
         [field:SerializeField] public List<EffectEntry> EffectEntryList { get; private set; }
         [field:SerializeField, TextArea(6,120)] public string ApprovedText { get; private set; }
-        [field:SerializeField] public PropensityType Propensity { get; private set; }
         
     }
 
@@ -31,9 +30,4 @@ namespace Script.SO
         Danger
     }
 
-    public enum PropensityType
-    {
-        Positive,
-        Negative
-    }
 }
