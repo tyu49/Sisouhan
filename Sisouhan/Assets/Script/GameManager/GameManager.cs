@@ -19,8 +19,8 @@ namespace Script.GameManager
         private NewsManager _newsManager;
 
         public event Action OnValueChanged;
-        
         public event Action OnNewDay;
+        public event Action<int> Ending;
         
         private void Awake()
         {
@@ -36,8 +36,14 @@ namespace Script.GameManager
         [ContextMenu("NewDay")]
         public void NewDay()
         {
-            ChangeValue(-10,0,0);
             CurrentDay++;
+            if(Danger >= 100)
+                Ending?.Invoke(0);
+            else if(CurrentDay==8&&Revolution>=80)
+                Ending?.Invoke(1);
+            else if(CurrentDay==8&&Revolution<80)
+                Ending?.Invoke(2);
+            ChangeValue(-10,0,0);
             _newsLimit = _dailyNews.NewDay(CurrentDay);
             OnNewDay?.Invoke();
         }

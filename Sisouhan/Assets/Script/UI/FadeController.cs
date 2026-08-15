@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Script.UI
 {
-    public class DayChangeFade : MonoBehaviour
+    public class FadeController : MonoBehaviour
     {
         [SerializeField] private CanvasGroup group;
         [SerializeField] private Image image;
@@ -24,11 +24,13 @@ namespace Script.UI
         private void Awake()
         {
             screen.processthird += NextDay;
+            manager.Ending += EndingFade;
         }
 
         private void OnDestroy()
         {
             screen.processthird -= NextDay;
+            manager.Ending -= EndingFade;
         }
 
         private void NextDay() => StartCoroutine(DayChangeCo());
@@ -51,10 +53,12 @@ namespace Script.UI
             screen.SetProcess(0);
         }
 
-        public void EndingFade()
+        private void EndingFade(int endingType)
         {
-            group.alpha = 1f;
             text.SetText(string.Empty);
+            group.blocksRaycasts = true;
+            group.alpha = 1f;
+            
         }
     }
 }
