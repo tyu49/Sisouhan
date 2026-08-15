@@ -62,7 +62,13 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 3c0f4c84bcefa74459c8f9364a0a3529
+    name: BGMVol
+  - guid: 25329f3b7f7de7f4a9f9ba45e31aeb4c
+    name: MasterVol
+  - guid: acdabb8a0e4c4fd4a83a3cd139b995ac
+    name: SFXVol
   m_AudioMixerGroupViews:
   - guids:
     - 817c11a4e203bb8469f124ca763ee245
@@ -123,7 +129,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VFX
+  m_Name: SFX
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 60f616aec2e549d4f97850e4afdc4647
   m_Children: []
@@ -136,3 +142,59 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &5410167668626213421
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2f73cc2e14fae0348bc204959130dd7b
+  m_EffectName: ParamEQ
+  m_MixLevel: 7057167491ddddc42834bcc8ab90f59b
+  m_Parameters:
+  - m_ParameterName: Center freq
+    m_GUID: fe93fd9db9f55e643b0652f43b4984d3
+  - m_ParameterName: Octave range
+    m_GUID: ff34838179734a940bb12fd63f792b80
+  - m_ParameterName: Frequency gain
+    m_GUID: 452a9edfe09571a4bb7f666b5578f6e8
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &5411031284000209632
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 53f15192f9994dc49b900f75d553daab
+  m_EffectName: Highpass Simple
+  m_MixLevel: 5b110b5ef6eede74b83f1504fb20af14
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 95427b141ca81ef48bb7ec5222007cd2
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &7677732841222493629
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 210de0676e8894c4cb232fbc3b39ccf7
+  m_EffectName: ParamEQ
+  m_MixLevel: 846b42f23cfd9844bba10fb00f43b3d7
+  m_Parameters:
+  - m_ParameterName: Center freq
+    m_GUID: 12dd4d7a94e33d74bb351975859f43f2
+  - m_ParameterName: Octave range
+    m_GUID: 2e6dbcabe70b1d847b27afbe6d0ec0bd
+  - m_ParameterName: Frequency gain
+    m_GUID: 8c21feae8ae460447aa5bb5bbf9dfc0e
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

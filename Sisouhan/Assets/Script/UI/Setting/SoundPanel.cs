@@ -11,7 +11,8 @@ namespace Script.UI.Setting
         [SerializeField] private CanvasGroup group;
         [SerializeField] private float fadeDelay;
 
-
+        public event Action OnPanelEnable;
+        
         private WaitForSeconds FadeDelay => new WaitForSeconds(fadeDelay);
         private bool _isOn = false;
         private void Start()
@@ -41,6 +42,7 @@ namespace Script.UI.Setting
         }
         private IEnumerator EnableCo()
         {
+            OnPanelEnable?.Invoke();
             group.blocksRaycasts = true;
             group.DOFade(1, fadeDelay);
             yield return FadeDelay;
