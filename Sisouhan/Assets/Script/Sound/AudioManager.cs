@@ -7,7 +7,8 @@ namespace Script.Sound
     public class AudioManager : MonoBehaviour
     {
         [SerializeField] private AudioMixer audioMixer;
-
+        [SerializeField] private AudioSource bgmPlayer;
+        [SerializeField] private AudioSource effectPlayer;
 
         public float Master { get; private set; } = 1f;
         public float BGM { get; private set; } = 1f;
@@ -19,8 +20,13 @@ namespace Script.Sound
         private string BGMname = "BGMVol";
         private void Awake()
         {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+            }
             if (Instance == null)
                 Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         private void OnDestroy()
@@ -60,6 +66,18 @@ namespace Script.Sound
                     audioMixer.SetFloat(SFXname, Mathf.Log10(value) * 20f);
                     break;
             }
+        }
+
+        public void PlayClip(AudioClip sound)
+        {
+            effectPlayer.PlayOneShot(sound);
+        }
+
+        public void ChangeBGM(AudioClip sound)
+        {
+            bgmPlayer.Stop();
+            bgmPlayer.clip = sound;
+            bgmPlayer.Play();
         }
         
     }

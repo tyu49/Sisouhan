@@ -3914,6 +3914,7 @@ MonoBehaviour:
   <Revolution>k__BackingField: 0
   <Reliability>k__BackingField: 50
   <Danger>k__BackingField: 0
+  bgmData: {fileID: 8300000, guid: 5e889a2da910c3b41bec71ffbfc59474, type: 3}
   screen: {fileID: 355408239}
 --- !u!4 &1725777601
 Transform:

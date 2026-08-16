@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Script.GameManager.Components;
 using Script.News;
 using Script.SO;
+using Script.Sound;
 using UnityEngine;
 
 namespace Script.GameManager
@@ -14,6 +15,8 @@ namespace Script.GameManager
         [field: SerializeField] public int Revolution { get; private set; }
         [field: SerializeField] public int Reliability { get; private set; } = 50;
         [field: SerializeField] public int Danger { get; private set; }
+        [SerializeField] private AudioClip bgmData;
+        [SerializeField] private AudioClip hitAudio;
         [SerializeField] private ScreenSetter screen;
         private AppearingNewsManager _dailyNews;
         private NewsManager _newsManager;
@@ -31,18 +34,22 @@ namespace Script.GameManager
         private void Start()
         {
             screen.SetProcess(3);
+            AudioManager.Instance.ChangeBGM(bgmData);
         }
 
         [ContextMenu("NewDay")]
         public void NewDay()
         {
             CurrentDay++;
-            if(Danger >= 100)
-                Ending?.Invoke(0);
+            if (Danger >= 100)
+            {
+                AudioManager.Instance.PlayClip(hitAudio);
+                Ending?.Invoke(4);
+            }
             else if(CurrentDay==8&&Revolution>=80)
-                Ending?.Invoke(1);
+                Ending?.Invoke(5);
             else if(CurrentDay==8&&Revolution<80)
-                Ending?.Invoke(2);
+                Ending?.Invoke(3);
             ChangeValue(-10,0,0);
             _newsLimit = _dailyNews.NewDay(CurrentDay);
             OnNewDay?.Invoke();

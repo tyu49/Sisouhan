@@ -4,6 +4,7 @@ using DG.Tweening;
 using Script.News;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Script.UI
@@ -58,7 +59,8 @@ namespace Script.UI
             text.SetText(string.Empty);
             group.blocksRaycasts = true;
             group.alpha = 1f;
-            
+            SceneManager.LoadScene(endingType);
+
         }
     }
 }

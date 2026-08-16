@@ -17,12 +17,14 @@ namespace Script.UI.Setting
         private bool _isOn = false;
         private void Start()
         {
-            inputReader.OnEscPressed += DisableThis;
+            if(inputReader!=null)
+                inputReader.OnEscPressed += DisableThis;
         }
 
         private void OnDestroy()
         {
-            inputReader.OnEscPressed -= DisableThis;
+            if(inputReader!=null)
+                inputReader.OnEscPressed -= DisableThis;
         }
 
         private void DisableThis() => StartCoroutine(DisableCo());

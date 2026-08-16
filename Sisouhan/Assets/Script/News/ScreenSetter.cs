@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Script.GameManager.Components;
 using Script.SO;
+using Script.Sound;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,6 +21,10 @@ namespace Script.News
         [SerializeField] private CanvasGroup chooseBtn;
         [SerializeField] private CanvasGroup nextBtn;
 
+
+        [SerializeField] private AudioClip leverAudio;
+        [SerializeField] private AudioClip buttonAudio;
+        
         [SerializeField] private List<InformationSO> information;
         [SerializeField] private List<Sprite> backgroundSprites;
         private WaitForSeconds LoadDelay => new WaitForSeconds(0.5f);
@@ -45,7 +50,11 @@ namespace Script.News
             title.SetText(data.HeadLine);
             body.SetText(data.Text);
         }
-        public void Choose(bool choice) => manager.Choose(_myData, choice);
+        public void Choose(bool choice)
+        {
+            AudioManager.Instance.PlayClip(buttonAudio);
+            manager.Choose(_myData, choice);
+        }
 
         public void SetResult(string head, string main)
         {
@@ -83,6 +92,7 @@ namespace Script.News
 
         public void NextBtn()
         {
+            AudioManager.Instance.PlayClip(leverAudio);
             switch (_process)
             {
                 case 0:
