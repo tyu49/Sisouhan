@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Script.GameManager.Components;
 using Script.SO;
 using Script.Sound;
+using Script.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,6 +28,11 @@ namespace Script.News
         
         [SerializeField] private List<InformationSO> information;
         [SerializeField] private List<Sprite> backgroundSprites;
+
+        [SerializeField] private List<TutorialSO> firstTutorialSo;
+        [SerializeField] private List<TutorialSO> secondTutorialSo;
+        [SerializeField] private List<TutorialSO> thirdTutorialSo;
+        [SerializeField] private List<TutorialSO> fourthTutorialSo;
         private WaitForSeconds LoadDelay => new WaitForSeconds(0.5f);
 
         private int _process = 0; //0 = 정보확인, 1 = 뉴스 검사, 2 = 결과 확인 3 = 다음일차 넘어가기
@@ -124,15 +130,47 @@ namespace Script.News
             {
                 case 0:
                     ShowInformation(manager.CurrentDay);
+                    if (manager.CurrentDay == 1)
+                    {
+                        foreach (var data in firstTutorialSo)
+                        {
+                            TutorialText.Instance.AddTutorial(data);
+                        }
+                        TutorialText.Instance.StartTutorial();
+                    }
+                    if (manager.CurrentDay == 4)
+                    {
+                        foreach (var data in fourthTutorialSo)
+                        {
+                            TutorialText.Instance.AddTutorial(data);
+                        }
+                        TutorialText.Instance.StartTutorial();
+                    }
                     break;
                 case 1:
                     background.sprite = backgroundSprites[1];
                     manager.GetNews();
+                    if (manager.CurrentDay == 1)
+                    {
+                        foreach (var data in secondTutorialSo)
+                        {
+                            TutorialText.Instance.AddTutorial(data);
+                        }
+                        TutorialText.Instance.StartTutorial();
+                    }
                     break;
                 case 2:
                     background.sprite = backgroundSprites[2];
                     newsManager.ShowResult();
                     newsManager.GetResult();
+                    if (manager.CurrentDay == 1)
+                    {
+                        foreach (var data in thirdTutorialSo)
+                        {
+                            TutorialText.Instance.AddTutorial(data);
+                        }
+                        TutorialText.Instance.StartTutorial();
+                    }
                     break;
             }
         }

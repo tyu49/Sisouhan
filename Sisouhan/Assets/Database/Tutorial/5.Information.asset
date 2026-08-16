@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ee57d421ee429386cef1cdd394b4a4, type: 3}
+  m_Name: 5.Information
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.TutorialSO
+  <Pos>k__BackingField: {x: 659, y: 80}
+  <Rotate>k__BackingField: {x: 0, y: 0, z: 0, w: 0}
+  <Text>k__BackingField: "\uC815\uBCF4\uC785\uB2C8\uB2E4. \uC815\uBCF4\uB294 \uB9E4\uC77C
+    \uC544\uCE68 \uAC31\uC2E0\uB418\uBA70 \uC808\uB300\uC801\uC73C\uB85C \uC9C4\uC2E4\uB418\uBA70
+    \uAC70\uC9D3\uC740 \uC5C6\uC2B5\uB2C8\uB2E4. \uD558\uC9C0\uB9CC \uC774 \uAC83\uB4E4\uC740
+    \uB2F9\uC2E0\uB9CC\uC774 \uC544\uB294 \uAC83\uB4E4\uC785\uB2C8\uB2E4. \uC124\uB4DD\uC740
+    \uC5B4\uB824\uC6B8\uC218\uB3C4\uC694."

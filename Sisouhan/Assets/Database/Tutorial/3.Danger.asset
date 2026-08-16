@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11ee57d421ee429386cef1cdd394b4a4, type: 3}
+  m_Name: 3.Danger
+  m_EditorClassIdentifier: Assembly-CSharp::Script.SO.TutorialSO
+  <Pos>k__BackingField: {x: -529, y: 291}
+  <Rotate>k__BackingField: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  <Text>k__BackingField: "\uC704\uD5D8\uB3C4\uB294 \uB2F9\uC2E0\uC758 \uD589\uB3D9\uC774
+    \uB300\uB2F4\uD574\uC9C8\uC218\uB85D \uC62C\uB77C\uAC11\uB2C8\uB2E4. \uC624\uB97C\uC218\uB85D
+    \uB2F9\uC2E0\uC758 \uBA85\uC904\uB3C4 \uC9E7\uC544\uC9C0\uACA0\uC8E0."

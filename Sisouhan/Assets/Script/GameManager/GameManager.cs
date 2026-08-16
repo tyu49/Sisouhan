@@ -4,6 +4,7 @@ using Script.GameManager.Components;
 using Script.News;
 using Script.SO;
 using Script.Sound;
+using Script.UI;
 using UnityEngine;
 
 namespace Script.GameManager
