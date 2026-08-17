@@ -17,7 +17,6 @@ namespace Script.UI
 
         public void StartGame() => StartCoroutine(StartCo());
 
-
         private IEnumerator StartCo()
         {
             group.blocksRaycasts = true;
@@ -25,7 +24,12 @@ namespace Script.UI
             yield return FadeDelay;
             SceneManager.LoadScene(1);
         }
-        
+        private IEnumerator InCo()
+        {
+            group.DOFade(0, fadeDelay).SetEase(Ease.OutQuad);
+            yield return FadeDelay;
+            group.blocksRaycasts = false;
+        }
         
         public void QuitGame()
         {
@@ -34,7 +38,10 @@ namespace Script.UI
 
         private void Start()
         {
+            group.blocksRaycasts = true;
+            group.alpha = 1;
             AudioManager.Instance.ChangeBGM(mainBgm);
+            StartCoroutine(InCo());
         }
     }
 }

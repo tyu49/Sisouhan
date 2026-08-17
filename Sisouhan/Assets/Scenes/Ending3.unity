@@ -334,12 +334,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -579,8 +579,9 @@ MonoBehaviour:
   - "\uB2F9\uC2E0\uC758 \uC218\uACE0 \uB355\uBD84\uC785\uB2C8\uB2E4."
   - "\uB2F9\uC2E0\uC740 \uC5B8\uB860\uC0AC\uB97C \uBBFF\uAC8C \uD558\uACE0, \uC815\uBD80\uB97C
     \uBE44\uD310\uD588\uC8E0"
-  - "\uC5B8\uB860\uC0AC\uB97C \uBBFF\uAC8C \uB418\uB2C8, \uC815\uBD80\uB97C \uBE44\uD310\uD558\uAC8C
-    \uB418\uC5C8\uC8E0."
+  - "\uC0AC\uB78C\uB4E4\uC740 \uC5B8\uB860\uC0AC\uB97C \uBBFF\uAC8C \uB418\uB2C8,
+    \uC815\uBD80\uB97C \uAC19\uC774 \uBE44\uD310\uD558\uACE0, \uBD88\uB9CC\uC744
+    \uD45C\uD588\uACA0\uC8E0."
   - "\uADF8\uB7F0 \uC0AC\uB78C\uB4E4\uC774 \uD558\uB098 \uB458 \uBAA8\uC5EC\uC11C
     \uACB0\uAD6D \uC774\uB7F0 \uACB0\uACFC\uAC00 \uB418\uC5B4 \uBC84\uB838\uAD70\uC694."
   - "\uC88B\uC740 \uC77C\uC778\uC9C0\uB294 \uBAA8\uB974\uACA0\uB124\uC694."

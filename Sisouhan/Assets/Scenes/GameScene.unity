@@ -189,12 +189,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -646,8 +646,8 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1576,12 +1576,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1895,7 +1895,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1045865426}
+  m_Father: {fileID: 1899632344}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2084,12 +2084,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2256,56 +2256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003912398}
   m_CullTransparentMesh: 1
---- !u!1 &1045865425
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1045865426}
-  - component: {fileID: 1045865427}
-  m_Layer: 5
-  m_Name: Barrier
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1045865426
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045865425}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1233028288}
-  - {fileID: 878870031}
-  m_Father: {fileID: 2097657816}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &1045865427
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045865425}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &1083235095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,12 +2651,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2768,11 +2718,11 @@ RectTransform:
   m_Children:
   - {fileID: 1116699750}
   - {fileID: 1706753235}
-  m_Father: {fileID: 1045865426}
+  m_Father: {fileID: 1899632344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -490}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 125.9125}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1233028289
@@ -3308,21 +3258,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. \uC0AC\uAC74\uACFC \uC9C1\uC811 \uAD00\uB828\uC774 \uC5C6\uB294 \uBC94\uC8C4\uC790\uC758
-    \uCE5C\uC778\uCC99 \uC2E0\uC0C1\uC815\uBCF4\uB97C \uAE30\uC0AC\uC5D0 \uACF5\uAC1C\uD560
-    \uC218 \uC5C6\uB2E4\uB77C\uB294 \uBC94\uC8C4\uC790\uC758 \uCE5C\uC778\uCC99 \uACF5\uAC1C
-    \uAE08\uC9C0\uBC95\uC774 \uBC1C\uD45C\uB418\uC5C8\uC2B5\uB2C8\uB2E4.\r\n2. \uAD6D\uD68C\uC758\uC6D0
-    E\uAC00 \uAC74\uC124\uC5C5\uCCB4 \uAE08\uD488\uC218\uC218 \uD610\uC758\uB85C
-    \uAD6C\uC18D\uB410\uC73C\uBA70 \uAC00\uC871\uC740 \uC0AC\uAC74\uACFC \uBB34\uAD00\uD568.\r\n3.
-    \uC804 \uC7A5\uAD00 F\uAC00 \uBD80\uCC98 \uC608\uC0B0 4\uC5B5 \uC6D0 \uC0AC\uC801
-    \uC0AC\uC6A9 \uD610\uC758\uB85C \uC720\uC8C4 \uD310\uACB0\uC744 \uBC1B\uC558\uC73C\uBA70
-    \uAC00\uC871\uC740 \uBB34\uAD00\uD568.\n4. \uC9D1\uD68C \uC0AC\uC2E4\uC744 \uBCF4\uB3C4\uD560
-    \uC218\uB294 \uC788\uC9C0\uB9CC \uC5B8\uB860\uC0AC\uAC00 \uB3C5\uC790\uC5D0\uAC8C
-    \uC9D1\uD68C \uCC38\uC5EC\uB97C \uC9C1\uC811 \uAD8C\uC720\uD560 \uC218 \uC5C6\uB2E4\uB77C\uB294
-    \uC9D1\uD68C \uC120\uB3D9 \uAE08\uC9C0\uBC95\uC774 \uBC1C\uD45C\uB418\uC5C8\uC2B5\uB2C8\uB2E4.\r\n5.
-    \uACBD\uCC30 \uC815\uBCF4\uC218\uC9D1 \uD655\uB300 \uBC18\uB300 \uC9D1\uD68C\uAC00
-    XX\uAD11\uC7A5\uC5D0\uC11C \uC5F4\uB9AC\uBA70 \uC57D 2\uB9CC \uBA85\uC774 \uCC38\uAC00\uD560
-    \uC608\uC815\uC784."
+  m_text: "\uC218\uC0AC\uAE30\uAD00\uC774 \uAD6D\uD68C\uC758\uC6D0 L\uC758 \uBC18\uBCF5\uC801\uC778
+    \uBC94\uC8C4 \uC758\uD639\uC744 \uC0C1\uB2F9 \uAE30\uAC04 \uC870\uC0AC\uD558\uBA74\uC11C\uB3C4
+    \uC218\uC0AC \uC0AC\uC2E4\uC744 \uC678\uBD80\uC5D0 \uACF5\uAC1C\uD558\uC9C0 \uC54A\uC740
+    \uAC83\uC73C\uB85C \uD655\uC778\uB410\uC2B5\uB2C8\uB2E4. \uB0B4\uBD80\uC5D0\uC11C\uB294
+    \uD604\uC9C1 \uAD6D\uD68C\uC758\uC6D0\uC774 \uAD00\uB828\uB41C \uC0AC\uAC74\uC778
+    \uB9CC\uD07C \uC0AC\uC2E4\uAD00\uACC4\uB97C \uCDA9\uBD84\uD788 \uD655\uC778\uD55C
+    \uB4A4 \uBC1C\uD45C\uD574\uC57C \uD55C\uB2E4\uB294 \uC758\uACAC\uC774 \uC788\uC5C8\uB358
+    \uAC83\uC73C\uB85C \uC54C\uB824\uC84C\uC2B5\uB2C8\uB2E4. \uADF8\uB7EC\uB098 \uC5EC\uB7EC
+    \uC758\uD639\uC774 \uB3D9\uC2DC\uC5D0 \uC870\uC0AC\uB418\uACE0 \uC788\uB2E4\uB294
+    \uC0AC\uC2E4 \uC5ED\uC2DC \uACF5\uAC1C\uB418\uC9C0 \uC54A\uC740 \uC0C1\uD0DC\uC600\uC2B5\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1b7d40e236979204e8d545af56ea4318, type: 2}
   m_sharedMaterial: {fileID: -119018194173936409, guid: 1b7d40e236979204e8d545af56ea4318, type: 2}
@@ -3624,12 +3569,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4502,6 +4447,7 @@ MonoBehaviour:
   group: {fileID: 1876954233}
   fadeTime: 0.2
   inputReader: {fileID: 577373935}
+  fade: {fileID: 1718703613}
 --- !u!225 &1876954233
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4684,6 +4630,96 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886169176}
+  m_CullTransparentMesh: 1
+--- !u!1 &1899632343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899632344}
+  - component: {fileID: 1899632347}
+  - component: {fileID: 1899632346}
+  - component: {fileID: 1899632345}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1899632344
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899632343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1233028288}
+  - {fileID: 878870031}
+  m_Father: {fileID: 2097657816}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1899632345
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899632343}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1899632346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899632343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1899632347
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899632343}
   m_CullTransparentMesh: 1
 --- !u!1 &2074782348
 GameObject:
@@ -5108,7 +5144,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1045865426}
+  - {fileID: 1899632344}
   m_Father: {fileID: 358554741}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5145,12 +5181,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -5193,7 +5229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Script.UI.TutorialText
   text: {fileID: 1683124658}
-  group: {fileID: 1045865427}
+  group: {fileID: 1899632345}
   readyList: []
   arrowTrm: {fileID: 878870031}
   inputReader: {fileID: 577373935}

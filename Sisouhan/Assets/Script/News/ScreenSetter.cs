@@ -130,46 +130,50 @@ namespace Script.News
             {
                 case 0:
                     ShowInformation(manager.CurrentDay);
-                    if (manager.CurrentDay == 1)
+                    if (manager.CurrentDay == 1 && AudioManager.Instance.TutorialProgress <= 0)
                     {
                         foreach (var data in firstTutorialSo)
                         {
                             TutorialText.Instance.AddTutorial(data);
                         }
                         TutorialText.Instance.StartTutorial();
+                        AudioManager.Instance.StudyTutorial();
                     }
-                    if (manager.CurrentDay == 4)
+                    if (manager.CurrentDay == 4 && AudioManager.Instance.TutorialProgress <= 3)
                     {
-                        foreach (var data in fourthTutorialSo)
+                        foreach (var data in fourthTutorialSo )
                         {
                             TutorialText.Instance.AddTutorial(data);
                         }
                         TutorialText.Instance.StartTutorial();
+                        AudioManager.Instance.StudyTutorial();
                     }
                     break;
                 case 1:
                     background.sprite = backgroundSprites[1];
                     manager.GetNews();
-                    if (manager.CurrentDay == 1)
+                    if (manager.CurrentDay == 1 && AudioManager.Instance.TutorialProgress <= 1)
                     {
                         foreach (var data in secondTutorialSo)
                         {
                             TutorialText.Instance.AddTutorial(data);
                         }
                         TutorialText.Instance.StartTutorial();
+                        AudioManager.Instance.StudyTutorial();
                     }
                     break;
                 case 2:
                     background.sprite = backgroundSprites[2];
                     newsManager.ShowResult();
                     newsManager.GetResult();
-                    if (manager.CurrentDay == 1)
+                    if (manager.CurrentDay == 1 && AudioManager.Instance.TutorialProgress <= 2)
                     {
                         foreach (var data in thirdTutorialSo)
                         {
                             TutorialText.Instance.AddTutorial(data);
                         }
                         TutorialText.Instance.StartTutorial();
+                        AudioManager.Instance.StudyTutorial();
                     }
                     break;
             }

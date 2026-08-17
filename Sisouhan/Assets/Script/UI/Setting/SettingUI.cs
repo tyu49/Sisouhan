@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using DG.Tweening;
 using Script.InputReader;
+using Script.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ public class SettingUI : MonoBehaviour
     [SerializeField] private CanvasGroup group;
     [SerializeField] private float fadeTime;
     [SerializeField] private InputReader inputReader;
+    [SerializeField] private FadeController fade;
 
     private void Awake()
     {
@@ -57,6 +59,7 @@ public class SettingUI : MonoBehaviour
 
     public void GoMain()
     {
-        SceneManager.LoadScene(0);
+        ChangeSettingState();
+        fade.ChangeScene(0);
     }
 }

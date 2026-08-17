@@ -18,9 +18,10 @@ namespace Script.Sound
         private string masterName = "MasterVol";
         private string SFXname = "SFXVol";
         private string BGMname = "BGMVol";
+        public int TutorialProgress { get; private set; }
         private void Awake()
         {
-            if (Instance != null)
+            if (Instance != null && Instance != this)
             {
                 Destroy(gameObject);
             }
@@ -31,7 +32,8 @@ namespace Script.Sound
 
         private void OnDestroy()
         {
-            Instance = null;
+            if (Instance == this)
+                Instance = null;
         }
 
         public void ChangeValue(SoundType type, float value)
@@ -78,6 +80,11 @@ namespace Script.Sound
             bgmPlayer.Stop();
             bgmPlayer.clip = sound;
             bgmPlayer.Play();
+        }
+
+        public void StudyTutorial()
+        {
+            TutorialProgress++;
         }
         
     }
